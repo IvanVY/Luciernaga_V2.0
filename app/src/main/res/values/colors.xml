@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="purple_50">#F3E5F5</color>
+    <color name="green_500">#4CAF50</color>
+
+    <color name="night_blue">#0F2027</color> <!-- Fondo azul oscuro -->
+    <color name="neon_yellow">#E1FF00</color> <!-- Color luciérnaga -->
+
+    <color name="neon_green">#FF39FF14</color> <!-- Verde neón para el efecto luciérnaga -->
+    <color name="gray_light">#FFB3B3B3</color>
+    <color name="gray_medium">#FF666666</color>
+
+
+    <color name="neon_yellow_alpha">#60E1FF00</color>
+
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="onBackground">#FFFFFF</color>
+    <color name="onBackground_secondary">#B3FFFFFF</color>
+    <color name="card_stroke">#1FFFFFFF</color>
+    <color name="purple_300">#BB86FC</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="teal_600">#00897B</color>
+
+    <color name="purple_100">#D1C4E9</color>
+    <color name="purple_200">#B39DDB</color>
+
+    <color name="switch_track">#BB86FC</color>
+    <color name="red_primary">#CF6679</color>
+
+    <color name="white_alpha_80">#CCFFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
+
+    <color name="green">#10B981</color>
+    <color name="gray">#6B7280</color>
+
+    <color name="primary_color">#6A1B9A</color>
+    <color name="primary_dark">#4A148C</color>
+    <color name="accent_color">#00E676</color>
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_background">#212121</color>
+    <color name="on_surface">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <color name="light_purple_background">#F5F0FA</color>
+    <color name="purple_primary">#7E57C2</color>
+    <color name="purple_dark">#5E35B1</color>
+    <color name="purple_light">#D1C4E9</color>
+    <color name="teal_primary">#26A69A</color>
+    <color name="text_primary">#212121</color>
+</resources>

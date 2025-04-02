@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. Fondo base (más claro) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="#252A5C" >
+
+            </gradient>
+
+        </shape>
+    </item>
+
+    <!-- 2. Brillo ambiental (más intenso) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.25"
+                android:centerY="0.25"
+                android:gradientRadius="70%"
+                android:startColor="#60FFD600"
+            android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <!-- 3. Luciérnagas (versión mejorada) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="2dp"
+                android:color="#A0FFEB3B"
+                android:dashWidth="1dp"
+                android:dashGap="60dp"/>
+        </shape>
+    </item>
+
+</layer-list>

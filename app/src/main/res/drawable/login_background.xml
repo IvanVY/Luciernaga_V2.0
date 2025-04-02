@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base gradient layer - Cielo nocturno morado -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="225"
+                android:startColor="#2E0B5E"
+                android:centerColor="#1D0B3D"
+                android:endColor="#0F0B2E"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Efecto de luz radial principal (luna) -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:centerX="0.3"
+                android:centerY="0.7"
+                android:gradientRadius="300"
+                android:endColor="#00000000"
+                android:type="radial" />
+            <size
+                android:width="600dp"
+                android:height="600dp"/>
+            <padding
+                android:left="-150dp"
+                android:top="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Luciérnaga 1 (grande) -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:centerX="0.7"
+                android:centerY="0.4"
+                android:gradientRadius="50"
+                android:startColor="#A0FFEB3B"
+                android:endColor="#00FFEB3B"
+                android:type="radial" />
+            <size
+                android:width="100dp"
+                android:height="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Luciérnaga 2 (mediana) -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:centerX="0.2"
+                android:centerY="0.5"
+                android:gradientRadius="30"
+                android:startColor="#80FFC107"
+                android:endColor="#00FFC107"
+                android:type="radial" />
+            <size
+                android:width="60dp"
+                android:height="60dp"/>
+        </shape>
+    </item>
+
+    <!-- Luciérnaga 3 (pequeña) -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:centerX="0.5"
+                android:centerY="0.8"
+                android:gradientRadius="20"
+                android:startColor="#60FFA000"
+                android:endColor="#00FFA000"
+                android:type="radial" />
+            <size
+                android:width="40dp"
+                android:height="40dp"/>
+        </shape>
+    </item>
+
+    <!-- Destello diagonal (más cálido) -->
+    <item>
+        <rotate
+            android:fromDegrees="-15"
+            android:pivotX="0%"
+            android:pivotY="100%">
+            <shape android:shape="rectangle">
+                <gradient
+                    android:angle="0"
+                    android:startColor="#60FFD740"
+                    android:centerColor="#00FFD740"
+                    android:endColor="#00FFD740"
+                    android:type="linear" />
+                <size
+                    android:height="2dp"/>
+
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Patrón de estrellas (puntos blancos) -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="0.3dp"
+                android:color="#40FFFFFF"
+                android:dashWidth="0.5dp"
+                android:dashGap="15dp"/>
+            <solid android:color="#00000000"/>
+        </shape>
+    </item>
+
+    <!-- Reflejo en esquina superior izquierda (más cálido) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:startColor="#00FFFFFF"
+                android:centerColor="#30FFEE58"
+                android:endColor="#00FFFFFF"
+                android:type="linear" />
+            <size
+                android:width="300dp"
+                android:height="300dp"/>
+            <padding
+                android:left="-150dp"
+                android:top="-150dp"/>
+        </shape>
+    </item>
+</layer-list>

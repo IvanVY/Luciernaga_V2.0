@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/modern_gradient_bg">
+
+    <!-- Título principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control de Luces"
+        android:textSize="24sp"
+        android:textColor="#1F2937"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Contenedor de relés -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/semi_transparent_card"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Relé 1 - Sala -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/relayImage1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_sala_off"
+                android:contentDescription="Luz de sala"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sala"
+                    android:textSize="18sp"
+                    android:textColor="#1F2937"/>
+
+                <TextView
+                    android:id="@+id/relayStatus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apagado"
+                    android:textSize="14sp"
+                    android:textColor="#6B7280"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E7EB"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Relé 2 - Cocina -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/relayImage2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_cocina_off"
+                android:contentDescription="Luz de cocina"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cocina"
+                    android:textSize="18sp"
+                    android:textColor="#1F2937"/>
+
+                <TextView
+                    android:id="@+id/relayStatus2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apagado"
+                    android:textSize="14sp"
+                    android:textColor="#6B7280"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E7EB"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Relé 3 - Entrada -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/relayImage3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_entrada_off"
+                android:contentDescription="Luz de entrada"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entrada"
+                    android:textSize="18sp"
+                    android:textColor="#1F2937"/>
+
+                <TextView
+                    android:id="@+id/relayStatus3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apagado"
+                    android:textSize="14sp"
+                    android:textColor="#6B7280"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botón de comando de voz -->
+    <Button
+        android:id="@+id/btnVoiceCommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comando de voz"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4F46E5"
+        android:layout_marginTop="8dp"
+        android:paddingVertical="12dp"/>
+
+    <!-- Acciones rápidas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16px">
+
+        <Button
+            android:id="@+id/btnTurnAllOn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Encender todo"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#10B981"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnTurnAllOff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apagar todo"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#EF4444"/>
+    </LinearLayout>
+</LinearLayout>

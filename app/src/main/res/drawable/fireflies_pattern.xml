@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+    <!-- Patrón aleatorio de luciérnagas -->
+    <group>
+        <path
+            android:pathData="M50,80 L50,82"
+            android:strokeColor="#FFEA00"
+            android:strokeWidth="3"/>
+        <path
+            android:pathData="M120,150 L120,152"
+            android:strokeColor="#FFF176"
+            android:strokeWidth="2.5"/>
+        <path
+            android:pathData="M200,60 L200,62"
+            android:strokeColor="#FFD600"
+            android:strokeWidth="2"/>
+        <path
+            android:pathData="M80,200 L80,202"
+            android:strokeColor="#FFEE58"
+            android:strokeWidth="3.2"/>
+        <path
+            android:pathData="M250,120 L250,122"
+            android:strokeColor="#FFC107"
+            android:strokeWidth="2.8"/>
+    </group>
+</vector>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_ll"
+    android:padding="16dp">
+
+    <!-- AppBar mejorado -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_primary"
+        android:elevation="8dp"
+        app:titleTextColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="8dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_light_icon"
+                android:layout_marginEnd="8dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luciérnaga"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Salir"
+                android:textColor="@color/white"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:paddingHorizontal="8dp"
+                app:icon="@drawable/ic_exit"
+                app:iconTint="@color/white"
+                app:iconPadding="4dp"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <!-- Contenido principal con margen superior -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tarjeta de controles principales -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/purple_light"
+                app:strokeWidth="1dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Panel de Control"
+                        android:textColor="#FBFBFB"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Botón de Control de Relés -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRelayControl"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Control de Relés"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/purple_primary"
+                        android:layout_marginBottom="12dp"
+                        android:drawableStart="@drawable/ic_power"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/white"
+                        style="@style/Widget.MaterialComponents.Button"/>
+
+                    <!-- Botón de Registro de Eventos -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEventLog"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Registro de Eventos"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/purple_dark"
+                        android:layout_marginBottom="12dp"
+                        android:drawableStart="@drawable/ic_history"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/white"
+                        style="@style/Widget.MaterialComponents.Button"/>
+
+                    <!-- Botón de Configuración -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Configuración ESP32"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/teal_primary"
+                        android:drawableStart="@drawable/ic_settings"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/white"
+                        style="@style/Widget.MaterialComponents.Button"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tarjeta de información del usuario -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:strokeColor="@color/purple_light"
+                app:strokeWidth="1dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_account"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Usuario"
+                        android:textColor="#FFEAEA"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

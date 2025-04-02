@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/night_sky_gradient"
+    android:padding="16dp">
+
+    <!-- Título mejorado -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Eventos"
+        android:textColor="#5D5959"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:drawableStart="@drawable/ic_event_log"
+        android:drawablePadding="8dp"
+        android:drawableTint="#373333"/>
+
+    <!-- Switch mejorado con estilo Material -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#40000000"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="#30FFFFFF"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_sensor"
+                android:layout_marginEnd="12dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado del Sensor"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/sensorSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                app:trackTint="@color/switch_track"
+                app:thumbTint="@color/white"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Sección de relés con estilo mejorado -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#40000000"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="#30FFFFFF"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecciona los relés a activar:"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:drawableStart="@drawable/ic_relay"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/white"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/relayCheckbox0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relé 0 (Sala)"
+                android:textColor="@color/white"
+                app:buttonTint="@color/switch_track"
+                android:layout_marginBottom="4dp"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/relayCheckbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relé 1 (Cocina)"
+                android:textColor="@color/white"
+                app:buttonTint="@color/switch_track"
+                android:layout_marginBottom="4dp"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/relayCheckbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relé 2 (Entrada)"
+                android:textColor="@color/white"
+                app:buttonTint="@color/switch_track"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Botones con estilo Material -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelectRelays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirmar"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_confirm"
+            app:iconTint="@color/white"
+            app:backgroundTint="@color/purple_primary"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClearLog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Limpiar"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_clear"
+            app:iconTint="@color/white"
+            app:backgroundTint="@color/red_primary"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+    </LinearLayout>
+
+    <!-- RecyclerView con borde -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#20000000"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="#30FFFFFF"
+        app:strokeWidth="1dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventLogRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:padding="4dp"
+            android:theme="@style/WhiteTextRecyclerView"/>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

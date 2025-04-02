@@ -1,0 +1,38 @@
+# Android
+*.keystore
+*.jks
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+google-services.json
+app/google-services.json
+secrets.properties
+.env
+*.apk
+*.aab
+
+# Android Studio
+.idea/
+*.iml
+.gradle/
+build/
+captures/
+.navigation/
+*.log
+
+# Otros
+*.DS_Store
+*.secret
+/config/private.key

@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="150dp"
+    android:viewportWidth="150"
+    android:viewportHeight="150">
+
+    <!-- Luciérnagas con núcleo brillante y aura -->
+    <group>
+        <path
+            android:pathData="M30,50 L30,52"
+            android:strokeColor="#FFEB3B"
+            android:strokeWidth="4"/>
+        <path
+            android:pathData="M30,50 L30,52"
+            android:strokeColor="#FFF9C4"
+            android:strokeWidth="2"/>
+
+        <path
+            android:pathData="M100,20 L100,22"
+            android:strokeColor="#FFC107"
+            android:strokeWidth="5"/>
+        <path
+            android:pathData="M100,20 L100,22"
+            android:strokeColor="#FFECB3"
+            android:strokeWidth="3"/>
+
+        <path
+            android:pathData="M60,100 L60,102"
+            android:strokeColor="#FFD600"
+            android:strokeWidth="3.5"/>
+        <path
+            android:pathData="M60,100 L60,102"
+            android:strokeColor="#FFF59D"
+            android:strokeWidth="2.5"/>
+    </group>
+</vector>
